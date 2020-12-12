@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>风景介绍</title>
+	<link rel="stylesheet" type="text/css" href="css/样式.css" />
+</head>
+<body onload="cir()">
+	<div class="top">
+		<span class="logo"><img src="images/logo.png" /></span>
+		<span class="search">
+			<input type="text" name="search" />
+		</span>
+		<span class="picture"><a href="#"><img src="images/搜索.jpg" /></a></span>
+		<span class="register">
+			<ul>
+				<li>
+					<a href="#">登录</a>
+					<div class="login">
+						用户： <input type="text" name="user" />
+						<br/>
+						密码： <input type="password" name="code" />
+						<br/>
+						<p> </p>
+						<form>
+							<input type="submit" name="submit" value="登录" />
+							<input type="radio" name="choice" value="choice" /> 下次自动登录
+						</form>
+					</div>
+				</li>
+				<li><a href="#">注册</a></li>
+			</ul>
+		</span>
+	</div>
+	<div class="banner">
+		<img src="images/11.jpg" />
+		<div class="illu">
+			<div>
+				<p style="font-size: 18px;font-family: cursive;color: #ef498b">近日访问较多的景点</p>
+			</div>
+			<div>
+				<div class="circle" style="background-color: red;"></div>
+				<p class="afterCirle" style="color: red;">杭州西湖</p>
+			</div>
+			<div>
+				<div class="circle"></div>
+				<p class="afterCirle">北京故宫</p>
+			</div>
+			<div>
+				<div class="circle"></div>
+				<p class="afterCirle">锦江古城</p>
+			</div>
+			<div>
+				<div class="circle"></div>
+				<p class="afterCirle">九寨沟</p>
+			</div>
+			<div>
+				<div class="circle"></div>
+				<p class="afterCirle">呼伦贝尔大草原</p>
+			</div>
+			<div>
+				<div class="circle"></div>
+				<p class="afterCirle">东方明珠</p>
+			</div>
+			<div>
+				<div class="circle"></div>
+				<p class="afterCirle">苏州园林</p>
+			</div>
+		</div>
+	</div>
+	<div class="nav">
+		<ul>
+			<li><a href="#">景点首页</a></li>
+			<li><a href="#">城市选择</a></li>
+			<li><a href="#">旅游攻略</a></li>
+			<li style="border-right: none;"><a href="#">个人主页</a></li>
+		</ul>
+	</div>
+	<div class="center">
+		<div class="left">
+			<h1>十大旅游景点推荐</h1>
+			<ul>
+				<li><button onclick="Wall()">万里长城</button></li>
+				<li><button onclick="Water()">桂林山水</button></li>
+				<li><button onclick="Beijing()" >北京故宫</button></li>
+				<li><button onclick="Lake()" >杭州西湖</button></li>
+				<li><button onclick="Yard()" >苏州园林</button></li>
+			<!--
+				<li><a href="">安徽黄山</a></li>
+				<li><a href="">长江三峡</a></li>
+				<li><a href="">日月潭</a></li>
+				<li><a href="">避暑山庄</a></li>
+				<li><a href="">兵马俑</a></li>
+			-->
+			</ul>
+		</div>
+		<div class="right">
+			<div class="internal">
+				<img class="internalImg" src="images/index.jpg" />
+				<p>万里长城主要景观有：八达岭长城、慕田峪长城、司马台长城、山海关、嘉峪关、虎山长城、九门口长城等……</p>
+			</div>
+			<div class="internal">
+				<img class="internalImg" src="images/山海关.jfif" />
+				<p>山海关，又称榆关、渝关、临闾关，素有中国长城“三大奇观之一”、“天下第一关”、“边郡之咽喉，京师之保障”之称。</p>
+			</div>
+			<div class="internal" style="margin-bottom: 10px;">
+				<img class="internalImg" src="images/嘉峪关.jfif" style="width: 450px;" />
+				<p>嘉峪关，号称“天下第一雄关”，是明长城最西端的关口，历史上曾被称为河西咽喉，因地势险要，建筑雄伟，有连陲锁钥之称。</p>
+			</div>
+		</div>
+		<div class="righta">
+			<div class="internala">
+				<img class="internalImg" src="images/桂林山水.jpg" />
+				<p>桂林山水是对桂林旅游资源的总称.国家五A级旅游景区，中国十大风景名胜之一，桂林山水是中国山水的代表闻名，享有“桂林山水甲天下”的美誉。</p>
+			</div>
+			<div class="internala">
+				<img class="internalImg" src="images/象鼻山.jfif" />
+				<p>象鼻山位于桂林市东南漓江右岸，山因酷似一只大象站在江边伸鼻吸水而得名，是桂林的象征。</p>
+			</div>
+			<div class="internala" style="margin-bottom: 17px;">
+				<img class="internalImg" src="images/山梯.jfif" />
+				<p>规模宏大的梯田群，如链似带，从山脚盘绕到山顶，小山如螺，大山似塔，层层叠叠，高低错落。其线条行云流水，潇洒柔畅；其规模磅礴壮观，气势恢弘，有“梯田世界之冠”的美誉</p>
+			</div>
+		</div>
+		<div class="rightb">
+			<div class="internala">
+				<img class="internalImg" src="images/北京故宫.jpg" />
+				<p>北京故宫是中国明清两代的皇家宫殿，旧称紫禁城，位于北京中轴线的中心。北京故宫以三大殿为中心，占地面积72万平方米，建筑面积约15万平方米，有大小宫殿七十多座，房屋九千余间。</p>
+			</div>
+			<div class="internala">
+				<img class="internalImg" src="images/北五门.jfif" style="width: 460px;" />
+				<p>午门是故宫的正门。俗称五凤楼。东西北三面以12米高的城台相连，环抱一个方形广场。</p>
+			</div>
+			<div class="internala" style="margin-bottom: 10px;">
+				<img class="internalImg" src="images/神武门.jfif" style="width: 460px;" />
+				<p>神武门在明朝时为“玄武门”，是宫内日常出入的门禁。</p>
+			</div>
+		</div>
+		<div class="rightc">
+			<div class="internala">
+				<img class="internalImg" src="images/杭州西湖.jfif" style="height: 340px;" />
+				<p>西湖有100多处公园景点，有60多处国家、省、市级重点文物保护单位和20多座博物馆，有断桥、雷峰塔、钱王祠、净慈寺、苏小小墓等景点。</p>
+			</div>
+			<div class="internala">
+				<img class="internalImg" src="images/断桥.jfif" style="height: 335px;" />
+				<p>西湖断桥位于杭州北里湖和外西湖的分水点上，一端跨着北山路，另一端接通白堤。</p>
+			</div>
+			<div class="internala" style="margin-bottom: 10px;">
+				<img class="internalImg" src="images/雷峰塔.jfif" style="height: 335px;" />
+				<p>雷峰塔又名皇妃塔、西关砖塔，位于西湖南岸夕照山的雷峰上。</p>
+			</div>
+		</div>
+		<div class="rightd">
+			<div class="internala">
+				<img class="internalImg" src="images/苏州园林.jfif" />
+				<p>苏州古典园林，亦称“苏州园林”，是位于江苏省苏州市境内的中国古典园林的总称。苏州古典园林宅园合一，可赏，可游，可居。</p>
+			</div>
+			<div class="internala">
+				<img class="internalImg" src="images/狮子林.jfif" />
+				<p>狮子林位于苏州城内东北部,因园内石峰林立，多状似狮子，故名“狮子林”。狮子林平面呈长方形，主要建筑有燕誉堂、见山楼、飞瀑亭、问梅阁等。</p>
+			</div>
+			<div class="internala" style="margin-bottom: 10px;">
+				<img class="internalImg" src="images/艺圃.jfif" />
+				<p>艺圃位于苏州阊门内，建于明代。原为药圃，清初改现名，又称敬亭山房。药圃为住宅花园，面积为3330多平方米.</p>
+			</div>
+		</div>
+	</div>
+	<div class="bottom">
+		冀ICP备123号、2020-2021版权所有
+	</div>
+	<button id="test" style="position:fixed;right:20px;bottom:20px;background-color:  #e9ccd3;color:white;width: 35px;font-weight: 700">回到顶部</button>
+	<script type="text/javascript">
+		var wallButton = document.getElementsByClassName("right")[0];
+		var waterButton = document.getElementsByClassName("righta")[0];
+		var beiButton = document.getElementsByClassName("rightb")[0];
+		var lakeButton = document.getElementsByClassName("rightc")[0];
+		var yardButton = document.getElementsByClassName("rightd")[0];
+		var circle = document.getElementsByClassName("circle");
+		var afterCircle = document.getElementsByClassName("afterCirle");
+		var test = document.getElementById("test");
+
+		test.onclick = function(){
+			document.body.scrollTop = document.documentElement.scrollTop = 0;
+		}
+
+		function Wall(){
+			wallButton.setAttribute("style","display:block");
+			waterButton.setAttribute("style","display:none");
+			beiButton.setAttribute("style","display:none");
+			lakeButton.setAttribute("style","display:none");
+			yardButton.setAttribute("style","display:none");
+		}
+		function Water(){
+			wallButton.setAttribute("style","display:none");
+			waterButton.setAttribute("style","display:block");
+			beiButton.setAttribute("style","display:none");
+			lakeButton.setAttribute("style","display:none");
+			yardButton.setAttribute("style","display:none");
+		}
+		function Beijing(){
+			wallButton.setAttribute("style","display:none");
+			waterButton.setAttribute("style","display:none");
+			beiButton.setAttribute("style","display:block");
+			lakeButton.setAttribute("style","display:none");
+			yardButton.setAttribute("style","display:none");
+		}
+		function Lake(){
+			wallButton.setAttribute("style","display:none");
+			waterButton.setAttribute("style","display:none");
+			beiButton.setAttribute("style","display:none");
+			lakeButton.setAttribute("style","display:block");
+			yardButton.setAttribute("style","display:none");
+		}
+		function Yard(){
+			wallButton.setAttribute("style","display:none");
+			waterButton.setAttribute("style","display:none");
+			beiButton.setAttribute("style","display:none");
+			lakeButton.setAttribute("style","display:none");
+			yardButton.setAttribute("style","display:block");
+		}
+
+		
+		function cir(){
+			alert("欢迎进入本网站！");
+			var i = 1;
+			timeId = setInterval(function(){
+				circle[6].setAttribute("style", "background-color:black");
+				afterCircle[6].setAttribute("style", "color:black");
+				if(i > 0){
+					circle[i - 1].setAttribute("style", "background-color:black");
+					afterCircle[i - 1].setAttribute("style", "color:black");
+				}
+				circle[i].setAttribute("style", "background-color:red");
+				afterCircle[i].setAttribute("style", "color:red");
+				i++;
+				if(i == 7){
+					i = 0;
+				}
+			},1000);
+		}
+	</script>
+</body>
+</html>
